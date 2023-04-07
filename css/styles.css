@@ -19,7 +19,6 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
 }
 
 p,
@@ -34,6 +33,12 @@ h6 {
 ul {
   margin: 0;
   padding-left: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -78,7 +83,6 @@ body {
   text-align: center;
 }
 .logo-link {
-  display: flex;
   font-family: "Raleway", sans-serif;
   font-style: normal;
   color: var(--primary-brand-color);
@@ -119,7 +123,6 @@ body {
 
 .contacts-list {
   display: flex;
-  margin-left: 138px;
 }
 .contact-item:not(:last-child) {
   margin-right: 40px;
@@ -148,15 +151,29 @@ body {
 /**------------------------------------------Hero-------------------------------------------*/
 
 .hero {
-  background: var(--dark-color);
   text-align: center;
-  height: 600px;
-  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.overlay {
+  max-width: 1440px;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-color: #2e2f42;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   margin-top: 0;
   margin-bottom: 48px;
-  padding-top: 188px;
+
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -176,7 +193,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
-  gap: 10px;
+  border: transparent;
 }
 
 .hero-button:hover,
@@ -191,13 +208,22 @@ body {
 }
 .features-title {
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .features-list {
   display: flex;
-  gap: 8px;
+  gap: 24px;
 }
 .features-item {
-  width: 264px;
-  flex-direction: column;
+  width: calc((100%-72px) / 4);
 }
 .features-subtitle {
   font-weight: 500;
@@ -253,11 +279,11 @@ body {
   text-transform: capitalize;
   color: var(--dark-color);
   margin-bottom: 72px;
-  padding-top: 120px;
 }
 
 .team {
   background-color: var(--light-color);
+  padding-top: 120px;
 }
 
 .team-list {
@@ -280,6 +306,8 @@ body {
   text-align: center;
 }
 .team-name {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -294,14 +322,13 @@ body {
 }
 
 .footer {
-  background-color: var(--dark-color);
-  height: 312px;
-}
-.footer-all-text {
   padding-top: 100px;
   padding-bottom: 100px;
+
+  background-color: var(--dark-color);
+}
+.footer-all-text {
   width: 264px;
-  height: 112px;
 }
 .logo-link-footer {
   font-family: "Raleway" sans-serif;
@@ -326,19 +353,17 @@ body {
 }
 
 **-------------------------------------------Portfolio-------------------------------------------*/
-  .filter {
-  width: 586px;
+  .filter-title {
 }
-.filter-container {
-}
-.filter-title {
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .filter-list {
+  margin-bottom: 72px;
   display: flex;
   gap: 24px;
   justify-content: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
 }
 .filter-item {
 }
@@ -366,43 +391,33 @@ body {
 .filter-button:focus {
   color: var(--white-background-color);
   background-color: var(--pressed-state-color);
-}
-
-.category-section {
+  border-color: transparent;
 }
 
 .category-list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 28px;
+  row-gap: 24px;
   column-gap: 24px;
   margin-left: auto;
   margin-right: auto;
-
-  padding-bottom: 120px;
 }
 .category-item {
   width: 360px;
-  text-align: center;
-  border: 1px solid var(--accent-color);
 }
 .category-link {
 }
 
 .card-content-portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
-
-  gap: 8px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
 }
 
 .category-name {
-  margin-top: 32px 95px 8px 15;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
