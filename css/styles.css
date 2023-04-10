@@ -11,6 +11,10 @@
   --hero-background-color: rgba(46, 47, 66, 0.7);
   --white-background-color: #ffffff;
   --modal-background-color: #fcfcfc;
+  --bg-gradient-color: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
 }
 
 html {
@@ -237,16 +241,20 @@ body {
   margin-bottom: 8px;
 }
 .icon-antenna::before {
-  background-image: url("../images/antenna\ 1.svg");
+  background-image: url("../images/antenna-opt.svg");
+  background-size: 64px;
 }
 .icon-clock:before {
-  background-image: url("../images/clock\ 1.svg");
+  background-image: url("../images/clock-opt.svg");
+  background-size: 64px;
 }
 .icon-diagram::before {
-  background-image: url("../images/diagram\ 1.svg");
+  background-image: url("../images/diagram-opt.svg");
+  background-size: 64px;
 }
 .icon-astronaut::before {
-  background-image: url("../images/astronaut\ 1.svg");
+  background-image: url("../images/astronaut-opt.svg");
+  background-size: 64px;
 }
 .features-subtitle {
   font-weight: 500;
