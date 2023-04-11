@@ -210,6 +210,18 @@ body {
 .features {
   padding-top: 120px;
 }
+.features-background-icon {
+  height: 112px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: #f4f4fd;
+  border-radius: 4px;
+}
 .features-title {
 }
 .visually-hidden {
@@ -230,32 +242,6 @@ body {
   width: calc((100%-72px) / 4);
 }
 
-.features-item::before {
-  display: block;
-  content: "";
-  height: 112px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--light-color);
-  margin-bottom: 8px;
-}
-.icon-antenna::before {
-  background-image: url("../images/antenna-opt.svg");
-  background-size: 64px;
-}
-.icon-clock:before {
-  background-image: url("../images/clock-opt.svg");
-  background-size: 64px;
-}
-.icon-diagram::before {
-  background-image: url("../images/diagram-opt.svg");
-  background-size: 64px;
-}
-.icon-astronaut::before {
-  background-image: url("../images/astronaut-opt.svg");
-  background-size: 64px;
-}
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -381,6 +367,46 @@ body {
   color: var(--light-color);
 
   margin-top: 16px;
+}
+
+.customers {
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark-color);
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.customers-item-link {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+.customers-icon {
+  fill: currentColor;
+}
+
+.customers-item-link:hover .customers-icon,
+.customers-item-link:focus .customers-icon {
+  border-color: #404bbf;
+  fill: #404bbf;
 }
 
 **-------------------------------------------Portfolio-------------------------------------------*/
