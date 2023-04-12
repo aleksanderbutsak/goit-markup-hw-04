@@ -90,7 +90,7 @@ body {
   background: var(--white-background-color);
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--accent-color);
 }
 
 .main-navigation {
@@ -357,14 +357,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4d5ae5;
+  background-color: var(--primary-brand-color);
 }
 .person-social-link:hover,
 .person-social-link:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
 }
 .person-social-icon {
-  fill: #ffffff;
+  fill: var(--white-background-color);
 }
 
 .customers {
@@ -390,24 +390,24 @@ body {
 .customers-item-link {
   width: 168px;
   height: 88px;
-  border: 1px solid#8e8f99;
+  border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8e8f99;
+  color: var(--subtle-text-color);
 }
 .customers-icon {
   fill: currentColor;
 }
 .customers-item-link:hover,
 .customers-item-link:focus {
-  border-color: #404bbf;
+  border-color: var(--pressed-state-color);
 }
 .customers-item-link:hover .customers-icon,
 .customers-item-link:focus .customers-icon {
-  border-color: #404bbf;
-  fill: #404bbf;
+  border-color: var(--pressed-state-color);
+  fill: var(--pressed-state-color);
 }
 .footer {
   padding-top: 100px;
@@ -429,7 +429,7 @@ body {
   color: var(--primary-brand-color);
 }
 .footer-span {
-  color: #f4f4fd;
+  color: var(--light-color);
 }
 .footer-slogan {
   font-size: 16px;
